@@ -2,6 +2,11 @@ package org.example.sort;
 
 import java.util.Arrays;
 
+/**
+ Sort O(n2)
+ Memmory O(n)
+ * */
+
 public class SelectionSort {
     public static void main(String[] args) {
         int[] array = new int[]{5, 0, -2, 7, 3};
