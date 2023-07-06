@@ -2,16 +2,17 @@ package org.example.memoization;
 
 import java.math.BigInteger;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CollatzProblem {
-    public static Map<BigInteger, BigInteger> mem = new HashMap<>();
+    public static Map<BigInteger, BigInteger> mem = new LinkedHashMap<>();
 
     public static void main(String[] args) {
 
-        System.out.println("5000000000 " + getSequinceLength(BigInteger.valueOf(5000000000L)));
+        System.out.println("19 " + getSequinceLength(BigInteger.valueOf(19)));
         System.out.println(mem);
-        System.out.println("15000000000 " + getSequinceLength(BigInteger.valueOf(15000000000L)));
+        System.out.println("40 " + getSequinceLength(BigInteger.valueOf(40)));
 
     }
 
