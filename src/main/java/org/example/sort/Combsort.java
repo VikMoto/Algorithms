@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  worst time Sort O(n2)
  best time O(n log n)
- Memmory O(n)
+ Memory O(n)
  * */
 public class Combsort {
     public static void main(String[] args) {

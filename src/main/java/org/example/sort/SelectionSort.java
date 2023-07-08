@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  Sort O(n2)
- Memmory O(n)
+ Memory O(n)
  * */
 
 public class SelectionSort {

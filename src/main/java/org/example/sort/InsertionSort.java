@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 /**
  Sort O(n2)
- Memmory O(n)
- Правило нахождения позиции для элемента со значением X:
+ Memory O(n)
+ Rule for finding position for element with value X:
  an ≤ X ≤ an+1
  * */
 public class InsertionSort {
