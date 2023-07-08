@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  worst time Sort O(n2)
+ best time of sort O(n*log(N))
  Memory O(n)
  Rule for finding position for element with value X:
  an ≤ X ≤ an+h

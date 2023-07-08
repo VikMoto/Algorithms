@@ -11,9 +11,7 @@ public class Combsort {
     public static void main(String[] args) {
         int[] array = new int[]{5, 0, -2, 7, 3};
         combSort(array);
-
         System.out.println(Arrays.toString(array));
-
     }
 
     public static void combSort(int[] array) {
