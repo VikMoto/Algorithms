@@ -1,0 +1,8 @@
+[Cat(name=Vaska, age=2), Cat(name=Umka, age=12),
+ Cat(name=Luska, age=6), Cat(name=Kuzia, age=4),
+ Cat(name=Murka, age=5), Cat(name=Barsik, age=6)]
+[1, 0, 1, 1, 2, 0, 0, 0, 0, 0, 1]
+[0, 1, 1, 2, 3, 5, 5, 5, 5, 5, 5]
+[Cat(name=Vaska, age=2), Cat(name=Kuzia, age=4),
+Cat(name=Murka, age=5), Cat(name=Luska, age=6),
+Cat(name=Barsik, age=6), Cat(name=Umka, age=12)]
