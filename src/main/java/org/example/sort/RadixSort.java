@@ -24,7 +24,7 @@ public class RadixSort {
         return numbers;
     }
 
-    private static int numberOfDigit(int number) {
+    static int numberOfDigit(int number) {
         int i = 1;
         long n = 10;
         while (number >= n) {
@@ -34,7 +34,7 @@ public class RadixSort {
         return i;
     }
 
-    private static int findMaxNumberOfDigits(int[] numbers) {
+    static int findMaxNumberOfDigits(int[] numbers) {
         int result = 1;
         for (int i = 0; i < numbers.length; i++) {
             int digits = numberOfDigit(numbers[i]);
@@ -43,12 +43,12 @@ public class RadixSort {
         return result;
     }
 
-    private static int getDigit(int number, int devider) {
+    static int getDigit(int number, int devider) {
         return number % (devider * 10) / devider;
 
     }
 
-    private static int[] findMinMaxKey(int[] numbers, int devider) {
+    static int[] findMinMaxKey(int[] numbers, int devider) {
         if (numbers.length == 0) {
             return new int[]{0, 0};
         }
@@ -66,7 +66,7 @@ public class RadixSort {
         return new int[]{minKey, maxKey};
     }
 
-    private static int[] distributingCountingSort(int[] numbers, int devider) {
+    static int[] distributingCountingSort(int[] numbers, int devider) {
         int[] minMax = findMinMaxKey(numbers, devider);
         int minKey = minMax[0];
         int maxKey = minMax[1];
