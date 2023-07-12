@@ -12,6 +12,11 @@ public class CountingSort {
     public static void main(String[] args) {
         int[] array = new int[]{5, 0, -2, 7, 3, -2};
 
+        countingSort(array);
+        System.out.println(Arrays.toString(array));
+    }
+
+    private static int[] countingSort(int[] array) {
         int[] minMax = findMinMax(array);
         int min = minMax[0];
         int max = minMax[1];
@@ -25,7 +30,6 @@ public class CountingSort {
         }
 
         int indexOuter = 0;
-
         //create sorting Array
         for (int i = 0; i < arrayHelp.length; i++) {
             if (arrayHelp[i] != 0) {
@@ -36,7 +40,7 @@ public class CountingSort {
                 } 
             }
         }
-        System.out.println(Arrays.toString(array));
+        return array;
     }
 
     private static int[] findMinMax(int[] array) {
