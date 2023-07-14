@@ -2,6 +2,7 @@ package org.example.sort;
 
 import org.junit.jupiter.api.Test;
 
+import static org.example.sort.MergeRecursiveSort.mergeSortingSequence;
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -15,4 +16,5 @@ public class MergeRecursiveSortTest {
         MergeRecursiveSort.mergeRecursiveSort(array);
         assertArrayEquals(expected, array);
     }
+
 }
