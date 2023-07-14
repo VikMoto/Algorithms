@@ -26,4 +26,5 @@ public class BubbleSort {
 
         System.out.println("array = " + Arrays.toString(array));
     }
+
 }
