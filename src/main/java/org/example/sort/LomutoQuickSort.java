@@ -10,7 +10,7 @@ public class LomutoQuickSort {
         System.out.println(Arrays.toString(array));
     }
 
-    private static void lomutoQuickSort(int[] array) {
+    static void lomutoQuickSort(int[] array) {
         lomutoQuickSort(array, 0, array.length - 1);
     }
 
