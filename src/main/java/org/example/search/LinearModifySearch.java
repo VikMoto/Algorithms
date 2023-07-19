@@ -2,6 +2,11 @@ package org.example.search;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ Worst-case performance	O(n)
+ Best-case performance	O(1)
+ Average performance	O(n)
+ * */
 
 public class LinearModifySearch {
     public static void main(String[] args) {

@@ -34,7 +34,6 @@ public class ThreeWayQuickSort {
     //Deykstra partition
     private static int[] breakPartition(int[] array, int lo, int hi) {
         int pivot = array[lo];
-        System.out.print(pivot + ". ");
         int i = lo + 1;
         int lt = lo;
         int gt = hi;
