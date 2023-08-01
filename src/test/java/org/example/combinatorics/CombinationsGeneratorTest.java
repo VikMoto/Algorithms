@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class CombinationsGeneratorTest {
     @Test
@@ -15,7 +14,6 @@ class CombinationsGeneratorTest {
         Assertions.assertEquals(10, result.size());
 
         // Add more specific assertions to validate the generated combinations
-        // For example, check individual combinations:
         Assertions.assertEquals(List.of(0, 1, 2), result.get(0));
         Assertions.assertEquals(List.of(0, 1, 3), result.get(1));
         Assertions.assertEquals(List.of(0, 2, 3), result.get(2));
