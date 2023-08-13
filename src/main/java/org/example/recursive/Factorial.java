@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 public class Factorial {
     public static void main(String[] args) {
-        int number = 200000;
+        int number = 5;
         System.out.println(factorial(number));
     }
 

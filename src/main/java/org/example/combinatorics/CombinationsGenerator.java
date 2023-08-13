@@ -10,19 +10,13 @@ public class CombinationsGenerator {
     
     public static List<List<Integer>> combinationsGenerator(int totalNumber, int k) {
         List<List<Integer>> result = new ArrayList<>();
-        List<Integer> combination = new ArrayList<>() ;
+        List<Integer> combination;
         int[] supportSequence = generateSupportSequence(totalNumber, k);
         System.out.println("Arrays.toString(supportSequence) = " + Arrays.toString(supportSequence));
-        combination = new ArrayList<>();
-        for (int j = 0; j < supportSequence.length - 2; j++) {
-            combination.add(supportSequence[j]);
-        }
 
         while (true) {
-            combination = new ArrayList<>();
-            for (int j = 0; j < supportSequence.length - 2; j++) {
-                combination.add(supportSequence[j]);
-            }
+
+            combination = addCombination(supportSequence);
             result.add(combination);
 //            System.out.println("combination = " + combination);
             int j = 0;
@@ -37,6 +31,14 @@ public class CombinationsGenerator {
                 }
             }
         return result;
+    }
+
+    private static List<Integer> addCombination(int[] supportSequence) {
+        List<Integer> combination = new ArrayList<>();
+        for (int j = 0; j < supportSequence.length - 2; j++) {
+            combination.add(supportSequence[j]);
+        }
+        return combination;
     }
 
     private static int[] generateSupportSequence(int totalNumber, int elementsNumber) {

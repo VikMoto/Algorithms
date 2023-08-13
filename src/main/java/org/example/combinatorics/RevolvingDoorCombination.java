@@ -2,6 +2,21 @@ package org.example.combinatorics;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ How the algorithm works
+ We generate all combinations of n integers [0,1,2...n-1] by k.
+ 1) Create a sequence of k + 1 elements (hereinafter c). First k - elements
+    set equal to the element index. Element k+1 is set equal to n-1. Enter
+    additional variable j. Go to 2.
+ 2) We return the first k elements of the sequence as the next combination. Go to 3.
+ 3) Two options are possible:
+ - k is odd. If c0 + 1 < c1 set c0 = c0 + 1 go to 2. Otherwise set j = 1 and go to 4.
+ - k is even. If c0 >0 set c0 = c0 - 1 go to 2. Otherwise set j = 1 and go to 5.
+ 4) In case cj >j install cj = cj-1, cj-1 = j-1 and go to 2. Otherwise,
+    set j = j + 1 and go to 5.
+ 5) If cj +1 <= cj+1 set cj-1 = cj , cj = cj + 1 and go to 2. Otherwise,
+    set j = j + 1, if j<k go to 4. Otherwise, terminate the algorithm.
+ */
 
 public class RevolvingDoorCombination {
     public static void main(String[] args) {

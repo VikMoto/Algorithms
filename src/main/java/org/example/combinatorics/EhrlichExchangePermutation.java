@@ -9,14 +9,6 @@ public class EhrlichExchangePermutation {
         String[] original = new String[]{"Do", "You", "Want", "Eat"};
         List<List<Character>> exchangePermutation = ehrlichExchangePermutation(array);
         List<List<String>> exchangePermutation2 = ehrlichExchangePermutation(original);
-
-        for (List<Character> characterList : exchangePermutation) {
-            System.out.println(characterList);
-        }
-
-        for (List<String> stringList : exchangePermutation2) {
-            System.out.println(stringList);
-        }
     }
     public static <T> List<List<T>> ehrlichExchangePermutation(T[] permutation) {
         List<List<T>> result = new ArrayList<>();
@@ -57,11 +49,8 @@ public class EhrlichExchangePermutation {
                 swapInt(baseSuppurt, j++, k--);
             }
         }
-
         return result;
     }
-
-
     static <T> void swap(T[] permutation, int j, int k) {
         T temp = permutation[j];
         permutation[j] = permutation[k];

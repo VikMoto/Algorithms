@@ -40,8 +40,8 @@ public class GenerationCombinationsLexicographicOrder {
 
     private static List<Integer> addCombination(int[] supportSequence) {
         List<Integer> combination = new ArrayList<>();
-        for (int j = 0; j < supportSequence.length; j++) {
-            combination.add(supportSequence[j]);
+        for (int s : supportSequence) {
+            combination.add(s);
         }
         return combination;
     }

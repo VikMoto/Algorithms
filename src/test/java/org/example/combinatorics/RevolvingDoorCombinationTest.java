@@ -22,7 +22,6 @@ public class RevolvingDoorCombinationTest {
                 List.of(0, 1, 4)
         );
 
-
         // Call the revolvingDoorCombination method with the given inputs (5, 3)
         List<List<Integer>> doorCombination = RevolvingDoorCombination.revolvingDoorCombination(5, 3);
 

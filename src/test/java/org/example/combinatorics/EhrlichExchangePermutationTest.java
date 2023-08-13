@@ -27,7 +27,8 @@ class EhrlichExchangePermutationTest {
     @Test
     public void testEmptyArray() {
         Character[] array = new Character[1];
-        List<List<Character>> exchangePermutation = EhrlichExchangePermutation.ehrlichExchangePermutation(array);
+        List<List<Character>> exchangePermutation =
+                EhrlichExchangePermutation.ehrlichExchangePermutation(array);
 
         // For an empty array, there should be only one permutation (empty list)
         Assertions.assertEquals(1, exchangePermutation.size());
@@ -36,7 +37,8 @@ class EhrlichExchangePermutationTest {
     @Test
     public void testSingleElementArray() {
         Character[] array = new Character[]{'a'};
-        List<List<Character>> exchangePermutation = EhrlichExchangePermutation.ehrlichExchangePermutation(array);
+        List<List<Character>> exchangePermutation =
+                EhrlichExchangePermutation.ehrlichExchangePermutation(array);
 
         // For a single element array, there should be only one permutation (the original element)
         Assertions.assertEquals(1, exchangePermutation.size());
