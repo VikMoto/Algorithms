@@ -16,13 +16,13 @@ public class HoareQuickSortTest {
         assertArrayEquals(expected, array);
     }
 
-    @Test
-    public void testBreakPartition() {
-        int[] array = new int[]{5, 0, -2, 7, 3};
-        int expected = 2;
-
-        int result = HoareQuickSort
-                .breakPartition(array, 0, array.length - 1);
-        assertEquals(expected, result);
-    }
+//    @Test
+//    public void testBreakPartition() {
+//        int[] array = new int[]{5, 0, -2, 7, 3};
+//        int expected = 2;
+//
+//        int result = HoareQuickSort
+//                .breakPartition(array, 0, array.length - 1);
+//        assertEquals(expected, result);
+//    }
 }

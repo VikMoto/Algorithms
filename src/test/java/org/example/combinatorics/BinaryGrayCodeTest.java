@@ -1,10 +1,7 @@
 package org.example.combinatorics;
 
-
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BinaryGrayCodeTest {
@@ -21,7 +18,6 @@ public class BinaryGrayCodeTest {
         assertEquals(1, (int) lastCombination.get(0));
         assertEquals(0, (int) lastCombination.get(1));
         assertEquals(0, (int) lastCombination.get(2));
-
         // Add more assertions for other combinations if needed
     }
 }

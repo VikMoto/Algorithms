@@ -2,7 +2,6 @@ package org.example.combinatorics;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -10,7 +9,7 @@ import java.util.List;
  1) Create a sequence a of length m. Set a0 =n-m+1, other elements equal to 1. Go to 2.
  2) We return the sequence as a partition. Run test a1 < a0 -1 if it is
     condition is true go to 3, otherwise go to 4.
- 3) Set a0 =a0 -1, a1 =a1 +1. Go to 2.
+ 3) Set a0 =a0 - 1, a1 =a1 + 1. Go to 2.
  4) Starting from the second element of the sequence, we are looking for an element
     that satisfies the condition aj <a0 -1. If no such element is found, we end the
     algorithm. Calculate the sum of all elements to the found element minus 1 (denoted as sum).
@@ -68,5 +67,4 @@ public class SplitNumberIntoMParts {
         }
         return result;
     }
-
 }
