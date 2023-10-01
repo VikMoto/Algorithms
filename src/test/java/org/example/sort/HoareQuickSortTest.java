@@ -10,7 +10,7 @@ public class HoareQuickSortTest {
     @Test
     public void testHoareQuickSort() {
         int[] array = new int[]{5, 0, -2, 7, 3};
-        int[] expected = new int[]{-2, 1, 3, 5, 7};
+        int[] expected = new int[]{-2, 0, 3, 5, 7};
 
         HoareQuickSort.hoareQuickSort(array);
         assertArrayEquals(expected, array);
